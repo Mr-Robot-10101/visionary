@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'TechVault - CCTV & Computer Shop',
-  description: 'Secure login for TechVault - Your trusted CCTV and computer solutions',
+  title: 'D & G CCTV Computers - Secure Login',
+  description: 'Secure login for D & G CCTV Computers, your trusted security and computer solutions shop',
   generator: 'v0.app',
   icons: {
     icon: [

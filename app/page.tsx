@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 import { ArrowRight, Camera, Eye, EyeOff, LockKeyhole, Monitor, ShieldCheck, Sparkles, UserRound } from 'lucide-react'
 
@@ -20,8 +21,8 @@ export default function Page() {
               <Camera className="size-5" aria-hidden="true" />
             </div>
             <div>
-              <p className="text-sm font-bold tracking-[0.18em] text-foreground">TECHVAULT</p>
-              <p className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">CCTV & Computer Solutions</p>
+              <p className="text-sm font-bold tracking-[0.12em] text-foreground">D & G CCTV COMPUTERS</p>
+              <p className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Security & Computer Solutions</p>
             </div>
           </div>
           <div className="hidden items-center gap-2 text-xs text-muted-foreground sm:flex">
@@ -32,26 +33,34 @@ export default function Page() {
 
         <div className="grid flex-1 items-center gap-14 py-12 lg:grid-cols-[1fr_440px] lg:gap-24 lg:py-16">
           <section className="hidden lg:block">
-            <div className="mb-9 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.24em] text-primary">
+            <div className="mb-8 flex items-center gap-3 text-xs font-medium uppercase tracking-[0.24em] text-primary">
               <span className="h-px w-10 bg-primary" />
-              Secure access portal
+              D & G technology partner
             </div>
             <h1 className="max-w-xl text-5xl font-semibold leading-[1.06] tracking-[-0.04em] text-balance xl:text-6xl">
-              Keep your world <span className="text-primary">connected.</span>
+              Secure your space. <span className="text-primary">Power your work.</span>
             </h1>
-            <p className="mt-7 max-w-md text-base leading-7 text-muted-foreground">
-              Manage your security systems, computer equipment, service requests, and more from one secure workspace.
+            <p className="mt-6 max-w-md text-base leading-7 text-muted-foreground">
+              Your trusted destination for CCTV security, computers, networking, and reliable technical support.
             </p>
-            <div className="mt-12 grid max-w-md grid-cols-2 gap-3">
-              <div className="rounded-2xl border border-border bg-card/60 p-4 backdrop-blur-sm">
-                <ShieldCheck className="mb-5 size-5 text-primary" aria-hidden="true" />
-                <p className="text-sm font-medium">Protected access</p>
-                <p className="mt-1 text-xs leading-5 text-muted-foreground">Your systems, securely managed.</p>
+            <div className="mt-9 grid max-w-xl grid-cols-2 gap-3">
+              <div className="group relative min-h-36 overflow-hidden rounded-2xl border border-border bg-card/60">
+                <Image src="/cctv-security.png" alt="CCTV security camera" fill className="object-cover opacity-75 transition duration-500 group-hover:scale-105" sizes="(max-width: 1280px) 240px, 280px" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
+                <div className="relative flex h-full flex-col justify-end p-4">
+                  <Camera className="mb-5 size-5 text-primary" aria-hidden="true" />
+                  <p className="text-sm font-medium">CCTV security</p>
+                  <p className="mt-1 text-xs text-muted-foreground">Watch what matters.</p>
+                </div>
               </div>
-              <div className="rounded-2xl border border-border bg-card/60 p-4 backdrop-blur-sm">
-                <Monitor className="mb-5 size-5 text-primary" aria-hidden="true" />
-                <p className="text-sm font-medium">One dashboard</p>
-                <p className="mt-1 text-xs leading-5 text-muted-foreground">Everything in one clear view.</p>
+              <div className="group relative min-h-36 overflow-hidden rounded-2xl border border-border bg-card/60">
+                <Image src="/computer-systems.png" alt="Desktop computer setup" fill className="object-cover opacity-75 transition duration-500 group-hover:scale-105" sizes="(max-width: 1280px) 240px, 280px" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
+                <div className="relative flex h-full flex-col justify-end p-4">
+                  <Monitor className="mb-5 size-5 text-primary" aria-hidden="true" />
+                  <p className="text-sm font-medium">Computer systems</p>
+                  <p className="mt-1 text-xs text-muted-foreground">Built for your business.</p>
+                </div>
               </div>
             </div>
           </section>
@@ -63,7 +72,7 @@ export default function Page() {
                   <LockKeyhole className="size-5" aria-hidden="true" />
                 </div>
                 <h2 className="text-2xl font-semibold tracking-tight">Welcome back</h2>
-                <p className="mt-2 text-sm text-muted-foreground">Sign in to your TechVault account.</p>
+                <p className="mt-2 text-sm text-muted-foreground">Sign in to your D & G account.</p>
               </div>
 
               <form className="flex flex-col gap-5" onSubmit={(event) => event.preventDefault()}>
@@ -110,7 +119,7 @@ export default function Page() {
                 Business account SSO
               </button>
               <p className="mt-7 text-center text-xs text-muted-foreground">
-                New to TechVault? <a href="#create-account" className="font-semibold text-primary hover:underline">Create an account</a>
+                New to D & G? <a href="#create-account" className="font-semibold text-primary hover:underline">Create an account</a>
               </p>
             </div>
             <p className="mt-5 text-center text-[11px] text-muted-foreground/70">By continuing, you agree to our Terms of Service and Privacy Policy.</p>
@@ -118,7 +127,7 @@ export default function Page() {
         </div>
 
         <footer className="flex items-center justify-between border-t border-border/60 pt-5 text-[10px] uppercase tracking-[0.18em] text-muted-foreground/60">
-          <span>© 2024 TechVault</span>
+          <span>© 2026 D & G CCTV Computers</span>
           <span className="hidden sm:inline">Secure systems. Smarter living.</span>
         </footer>
       </div>
